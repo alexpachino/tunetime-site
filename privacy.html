@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Tune Time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F0EFE9;
+      --text: #1a1a1a;
+      --muted: #777;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --text: #f0efe9;
+        --muted: #888;
+      }
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-font-smoothing: antialiased; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HEADER ── */
+    header {
+      padding: 40px 24px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .back-link {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+      align-self: flex-start;
+    }
+
+    .back-link:hover { color: var(--text); }
+
+    .header-inner {
+      width: 100%;
+      max-width: 640px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 56px 24px 120px;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 640px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 52px;
+      letter-spacing: -0.01em;
+      line-height: 1.05;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .updated {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 44px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text);
+      opacity: 0.8;
+    }
+
+    p + p {
+      margin-top: 16px;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      opacity: 0.7;
+      transition: opacity 0.15s ease;
+    }
+
+    a:hover { opacity: 1; }
+
+    /* ── FOOTER ── */
+    footer {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      padding: 16px 24px calc(16px + env(safe-area-inset-bottom, 0px));
+      text-align: center;
+      background: linear-gradient(to top, var(--bg) 60%, transparent);
+      z-index: 10;
+    }
+
+    footer nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    footer a, footer a:visited {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+      opacity: 1;
+    }
+
+    footer a:hover { color: var(--text); }
+
+    .footer-dot {
+      width: 2px; height: 2px;
+      border-radius: 50%;
+      background: var(--muted);
+      opacity: 0.5;
+      display: inline-block;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 38px; }
+      p { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="back-link" href="/">← Home</a>
+  </div>
+</header>
+
+<main>
+  <div class="content">
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated March 2026</p>
+
+    <h2>Overview</h2>
+    <p>Tune Time is designed with privacy in mind. The app does not collect, store, or share any personal data.</p>
+
+    <h2>Microphone Access</h2>
+    <p>Tune Time requests access to your device's microphone solely to power the chromatic tuner feature. Audio is processed entirely on-device in real time and is never recorded, stored, or transmitted anywhere.</p>
+
+    <h2>Data Collection</h2>
+    <p>Tune Time does not collect any personal information, usage data, analytics, or crash reports. No data is sent to any server — there are no servers.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>Tune Time does not integrate any third-party SDKs, advertising networks, or analytics services.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Tune Time does not collect any information from anyone, including children under the age of 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy ever changes, the updated version will be posted at this URL with a revised date.</p>
+
+  </div>
+</main>
+
+<footer>
+  <nav>
+    <a href="/">Home</a>
+    <span class="footer-dot"></span>
+    <a id="footer-contact" href="#">Contact</a>
+  </nav>
+</footer>
+
+<script>
+(function(){
+  var u='alexpachino', d='gmail.com';
+  var els = [document.getElementById('footer-contact')];
+  els.forEach(function(el){ if(el) el.href = 'mai'+'lto:'+u+'@'+d; });
+})();
+</script>
+
+</body>
+</html>
